@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>🌸 SIMPLE MATH CRUSH | 3rd Sem Friendly 🌸</title>
+
+  <!-- CSS FILE LINK -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-box" id="gameBox">
+
+  <div class="title-area">
+    <h1>🌸 MATH CRUSH 🌸</h1>
+    <div class="sub">⚡ answer fast | +10 points | timer gets shorter ⚡</div>
+  </div>
+
+  <div class="score-panel">
+    <div class="score-card">
+      🏆 SCORE
+      <span class="score-value" id="scoreDisplay">0</span>
+    </div>
+
+    <div class="best-card">
+      ⭐ BEST
+      <span class="best-value" id="bestDisplay">0</span>
+    </div>
+  </div>
+
+  <div class="question-area">
+    <div class="timer">
+      ⏱️ TIME:
+      <span id="timerValue">5</span> sec
+    </div>
+
+    <div class="big-question" id="question">
+      5 + 3 = ?
+    </div>
+  </div>
+
+  <div class="options" id="optionsDiv">
+    <!-- answer buttons will appear here -->
+  </div>
+
+  <div class="message" id="msgBox">
+    💖 tap the correct number before time ends 💖
+  </div>
+
+  <button class="reset-btn" id="resetGame">
+    🔄 NEW GAME
+  </button>
+
+  <div class="footer">
+    🧠 correct = +10 points | wrong = game over | higher score = less time
+  </div>
+
+</div>
+
+<!-- JAVASCRIPT FILE LINK -->
+<script src="script.js"></script>
+
+</body>
+</html>

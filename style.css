@@ -1,0 +1,233 @@
+/* ========== SIMPLE & CLEAN STYLES ========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #ffe9c4, #ffd9e8);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+  padding: 20px;
+}
+
+/* GAME BOX */
+.game-box {
+  background: rgba(30, 20, 40, 0.85);
+  border-radius: 60px;
+  padding: 25px 20px 35px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,220,180,0.5);
+}
+
+/* TITLE */
+.title-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffdd99;
+  text-shadow: 2px 2px 0 #aa7a5c;
+}
+
+.sub {
+  color: #ffccaa;
+  font-size: 0.8rem;
+  background: rgba(0,0,0,0.4);
+  display: inline-block;
+  padding: 5px 18px;
+  border-radius: 40px;
+}
+
+/* SCORE PANEL */
+.score-panel {
+  background: rgba(15, 12, 25, 0.7);
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border: 1px solid #ffccaa77;
+}
+
+.score-card,
+.best-card {
+  background: #0a0818;
+  padding: 6px 18px;
+  border-radius: 40px;
+  color: #ffcf9a;
+  font-weight: bold;
+}
+
+.score-card span,
+.best-card span {
+  font-size: 0.8rem;
+  background: #f9ac67;
+  padding: 3px 10px;
+  border-radius: 30px;
+  margin-right: 8px;
+  color: #1e0a2a;
+}
+
+.score-value,
+.best-value {
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 60px;
+}
+
+/* QUESTION AREA */
+.question-area {
+  background: rgba(10, 8, 20, 0.8);
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #ffccaa66;
+}
+
+.timer {
+  background: black;
+  display: inline-flex;
+  padding: 6px 20px;
+  border-radius: 50px;
+  margin-bottom: 15px;
+  gap: 10px;
+  color: #ffbc7a;
+  font-weight: bold;
+}
+
+.timer span {
+  font-size: 1.8rem;
+  background: #1e1a2a;
+  padding: 0 15px;
+  border-radius: 40px;
+}
+
+.big-question {
+  font-size: 3rem;
+  font-weight: bold;
+  background: #0d0b1c;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 70px;
+  color: #ffddbb;
+  font-family: monospace;
+  letter-spacing: 3px;
+  border: 1px solid #ffbb8877;
+}
+
+/* OPTIONS */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.opt-btn {
+  background: #3a2a4a;
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  color: #ffddbb;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #1a0a2a;
+  transition: 0.05s linear;
+  font-family: monospace;
+}
+
+.opt-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #1a0a2a;
+}
+
+/* MESSAGE */
+.message {
+  background: rgba(0,0,0,0.55);
+  padding: 12px;
+  border-radius: 50px;
+  margin: 15px 0;
+  text-align: center;
+  color: #ffddbb;
+  font-weight: bold;
+}
+
+/* RESET BUTTON */
+.reset-btn {
+  background: linear-gradient(95deg, #f9ac67, #f38ba8);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 50px;
+  color: #1e0e2a;
+  cursor: pointer;
+  width: 80%;
+  max-width: 220px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 0 #8b5a4a;
+}
+
+.reset-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #8b5a4a;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 20px;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #ffdbbc;
+  background: rgba(0,0,0,0.4);
+  border-radius: 40px;
+  padding: 8px;
+}
+
+/* EFFECTS */
+.correct-effect {
+  background: rgba(80, 200, 120, 0.2);
+  transition: 0.08s;
+}
+
+.wrong-effect {
+  background: rgba(220, 60, 80, 0.3);
+  transition: 0.08s;
+}
+
+/* RESPONSIVE */
+@media (max-width: 550px) {
+
+  .opt-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 1.6rem;
+  }
+
+  .big-question {
+    font-size: 2rem;
+    padding: 10px 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
